@@ -96,16 +96,15 @@ $(document).ready(function() {
             }
         });
     }
-/*
-document.getElementById('goToAdmin').addEventListener('click', function() {
-    window.location.href = "/admin";
-});
-*/
+    
+    document.getElementById('goToUsers').addEventListener('click', function() {
+        window.location.href = "users";
+    });
+    
     // Event listeners
     document.getElementById('reportByGender').addEventListener('click', loadReportByGender);
     document.getElementById('reportByStatus').addEventListener('click', loadReportByStatus);
 });
-
 
 //Modal
 const openModalButton = document.querySelector("#open-modal");
@@ -133,6 +132,8 @@ document.getElementById('goToReports').addEventListener('click', function () {
     window.location.href = "/relatorios";
 });
 
+/*
 document.getElementById('goToUsers').addEventListener('click', function () {
-    window.location.href = "/users";
+    window.location.href = "users";
 });
+*/

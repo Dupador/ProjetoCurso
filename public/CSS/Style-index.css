@@ -27,6 +27,9 @@ header nav {
 #navbar-div{
     position: absolute;
     right: 20%;
+    border: 1px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 #navbar-div> a{
@@ -107,10 +110,6 @@ header nav {
     border-radius: 5%;
 }
 
-#titelReg {
-    text-align: center;
-}
-
 #divicao {
     background-color: var(--color-Geral);
     color: #fff;
@@ -118,16 +117,22 @@ header nav {
     padding: 5px;
 }
 
+/*Formulario*/
+#titelReg {
+    text-align: center;
+}
+
 #formRegistro {
     margin-bottom: 20px;
 }
 
-#formRegistro> div {
+#RegDiv{
     width: 500px;
     height: 280px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 10px;
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 
 .inputReg{
@@ -144,6 +149,7 @@ header nav {
 #RegSub {
     background-color: #007BFF;
     color: #FFF;
+    margin: 10px;
 }
 
 /*Roda pé*/
@@ -177,3 +183,14 @@ div.container {
 }
 
 /*Resposividade*/
+@media (max-width: 400px){
+    /*nav Bar*/
+    header> nav> h1 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .nav-link{
+        margin-right: 5%;
+    }
+}

@@ -22,6 +22,7 @@ $(document).ready(function() {
                             <td>${lead.situacao}</td>
                             <td>
                                 <button onclick="openEditModal(${lead.id}, '${lead.name}', '${lead.email}', '${lead.celular}', '${lead.genero}', '${lead.situacao}')">Alterar</button>
+                                <br>
                                 <button onclick="deleteLead(${lead.id})">Remover</button>
                             </td>
                         </tr>
